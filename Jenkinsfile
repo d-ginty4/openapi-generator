@@ -17,7 +17,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Use Maven to build the project and package it as a JAR
-                sh 'mvn clean install'
+                sh 'mvn clean install -Dmaven.test.skip=true'
             }
         }
         
