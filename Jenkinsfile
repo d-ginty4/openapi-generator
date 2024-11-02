@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         JAVA_HOME = tool name: 'JDK11'   // Ensure this matches your Jenkins configuration
-        PATH = "${JAVA_HOME}/bin:${env.PATH}"
+        PATH = "/home/declan/.jenv/versions/11:${env.PATH}"
     }
 
     stages {
