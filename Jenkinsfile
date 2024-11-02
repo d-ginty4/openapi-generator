@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from SCM (like Git)
-                git branch: 'main', url: 'https://github.com/d-ginty4/openapi-generator.git'
+                git branch: 'master', url: 'https://github.com/d-ginty4/openapi-generator.git'
             }
         }
         
